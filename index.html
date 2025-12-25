@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Price Predictor</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-blue-700">📈 Stock Price Predictor</h1>
+            <p class="text-gray-600 mt-2">Combining Numerical & Sentiment Analysis for Accurate Forecasting</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <section class="bg-white rounded-2xl p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-4">📊 Numerical Analysis (DHCP Sensor Constructors)</h2>
+                <canvas id="stockChart" class="w-full h-64" role="img" aria-label="Stock prediction chart"></canvas>
+            </section>
+
+
+            <section class="bg-white rounded-2xl p-6 shadow-md">
+                <h2 class="text-xl font-semibold mb-4">📰 Sentiment Analysis (TOI New Year Guidelines)</h2>
+                <canvas id="sentimentChart" class="w-full h-64" role="img"
+                    aria-label="Sentiment analysis chart"></canvas>
+            </section>
+        </div>
+
+
+        <section class="mt-10 bg-white rounded-2xl p-6 shadow-md">
+            <h2 class="text-xl font-semibold">📌 Model Summary</h2>
+            <p class="text-gray-700 mt-2 leading-relaxed">
+                This hybrid model leverages historical numerical data from DHCP sensor constructors, fused with
+                sentiment data extracted from Times of India New Year guideline articles. The integration of these two
+                perspectives delivers enhanced prediction accuracy, culminating in an exceptional R² score of
+                <span class="text-green-600 font-bold">0.97</span>.
+            </p>
+        </section>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
